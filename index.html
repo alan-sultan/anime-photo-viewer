@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Anime Photo Viewer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <form id="signInForm">
-            <h2>Sign In</h2>
+        <h1>Anime Photo Viewer</h1>
+        <form id="animeForm">
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <label for="animeTitle">Anime Title</label>
+                <input type="text" id="animeTitle" name="animeTitle" placeholder="enter anime" required>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Sign In</button>
-            <p id="errorMessage"></p>
+            <button type="submit">Search</button>
         </form>
+        <div class="photoParent">
+        </div>
+        <div id="videoList"></div>
     </div>
     <script src="scripts.js"></script>
 </body>
